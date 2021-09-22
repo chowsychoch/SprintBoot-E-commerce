@@ -41,7 +41,7 @@ public class UserRepositoryTests {
 	public void testCreateUserWithTwoRole() {
 		Role roleAdmin = new Role(4);
 		Role roleSalesperson = new Role(5);
-		User user_name = new User("man@gmail.com", "name2020", "man","cho");
+		User user_name = new User("josephine@gmail.com", "joj2020", "josephine","chow");
 		
 		user_name.addRole(roleSalesperson);
 		user_name.addRole(roleAdmin);
@@ -83,7 +83,7 @@ public class UserRepositoryTests {
 	
 	@Test
 	public void testDeleteUser() {
-		Integer userId = 3;
+		Integer userId = 5;
 		repo.deleteById(userId);		
 	}
 }
